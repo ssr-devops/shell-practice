@@ -1,20 +1,11 @@
 #!/bin/bash
 
 echo "Please enter the name of the first person:"
-read $1
+read PERSON1
 echo "Please enter the name of the second person:"
-read $2
+read PERSON2
 
-echo "$1 : Hello! How can I assist you today?"
-echo "$2 : Hi $1, Iam looking for a good book to read"
+echo "$PERSON1 : Hello! How can I assist you today?"
+echo "$PERSON2 : Hi $PERSON1, Iam looking for a good book to read"
 
-echo "$1 : Sure! What genre are you interested in?"
-echo "$2 : I enjoy science fiction and fantasy."
-sleep 5
-echo "The name of the script is : $0"
-echo "The first parameter is : "$1""
-echo "The second parameter is : $2"
-echo "The total number of parameters passed is : $#"
-echo "All the parameters passed are : $*"
-echo "The process ID of the current script is : $$"
-echo "The last executed command's exit status is : $?"
+
