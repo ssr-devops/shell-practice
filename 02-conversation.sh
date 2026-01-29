@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1=LIKKY
-PERSON2=CHIKKY
+PERSON1=SureSH
+PERSON2=ramesh
 
 echo "$PERSON1 : Hello! How can I assist you today?"
 echo "$PERSON2 : Hi $PERSON1, Iam looking for a good book to read."
