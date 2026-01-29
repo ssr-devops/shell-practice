@@ -1,19 +1,19 @@
 #!/bin/bash
 
-NAME=""
+NAME="Reddy"
 
 #== : Equals
-if [[ $NAME == "Surendar" ]]; then
-    echo "Hello, Surendar!"
+if [[ $NAME == "Reddy" ]]; then
+    echo "Hello, Reddy!"
 else
     echo "Hello, stranger!"
 fi
 
 #!= : Not Equals
-if [[ $NAME != "Surendar" ]]; then
+if [[ $NAME != "Reddy" ]]; then
     echo "Access denied."
 else
-    echo "Welcome, Surendar!"
+    echo "Welcome, Reddy!"
 fi
 
 #-z : String is empty (zero length)
