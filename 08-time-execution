@@ -6,6 +6,8 @@ echo "Start Time (in seconds since epoch): $TIMESTAMP"
 
 sleep 5
 
+echo "End Time (in seconds since epoch): $TIMESTAMP"
+
 END_TIMESTAMP=$(date +%s)
 ELAPSED_TIME=$((END_TIMESTAMP - TIMESTAMP))
 
