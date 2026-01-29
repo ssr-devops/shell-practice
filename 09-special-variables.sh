@@ -2,17 +2,6 @@
 
 #### script to demonstrate special variables ####
 
-PERSON1=$1
-PERSON2=$2
-
-echo "Please enter the name of the first person: $PERSON1"
-echo "Please enter the name of the second person: $PERSON2"
-
-echo "$PERSON1 : Hello! How can I assist you today?"
-echo "$PERSON2 : Hi $PERSON1, Iam looking for a good book to read."
-echo "$PERSON1 : Sure! What genre are you interested in?"
-echo "$PERSON2 : I enjoy science fiction and fantasy."
-echo "$PERSON1 : Great choices! I recommend 'Dune' by Frank Herbert for science"
 
 echo "The name of the script is : $0"
 echo "The first argument is : $1"
@@ -21,18 +10,18 @@ echo "The total number of arguments passed is : $#"
 echo "All the arguments passed are : $*"
 echo "The process ID of the current script is : $$"
 echo "The last executed command's exit status is : $?"
-#echo "The name of the shell is : $SHELL"
-#echo "The home directory of the current user is : $HOME"
-#echo "The current working directory is : $PWD"
-#echo "The operating system type is : $OSTYPE"
-#sleep 10
-#echo "The ID of the last background command is : $!"
-#echo "The current user logged in is : $USER"
-#echo "The path variable is : $PATH"
-#echo "The internal field separator is : $IFS"
-#echo "The terminal type is : $TERM"
-#echo "The language setting is : $LANG"
-#echo "The current date and time is : $(date)"
-#echo "The current shell level is : $SHLVL"
-#echo "The history number of the current command is : $HISTCMD"
-#echo "The version of bash is : $BASH_VERSION"
+echo "The name of the shell is : $SHELL"
+echo "The home directory of the current user is : $HOME"
+echo "The current working directory is : $PWD"
+echo "The operating system type is : $OSTYPE"
+sleep 10
+echo "The ID of the last background command is : $!"
+echo "The current user logged in is : $USER"
+echo "The path variable is : $PATH"
+echo "The internal field separator is : $IFS"
+echo "The terminal type is : $TERM"
+echo "The language setting is : $LANG"
+echo "The current date and time is : $(date)"
+echo "The current shell level is : $SHLVL"
+echo "The history number of the current command is : $HISTCMD"
+echo "The version of bash is : $BASH_VERSION"
