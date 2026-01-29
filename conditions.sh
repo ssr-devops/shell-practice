@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Number=15
+Number=10
 
 if [ $Number -gt 10 ]; then
     echo "The number is greater than 10."
