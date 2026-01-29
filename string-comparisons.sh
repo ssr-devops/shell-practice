@@ -10,10 +10,10 @@ else
 fi
 
 #!= : Not Equals
-if [[ $NAME != "Admin" ]]; then
+if [[ $NAME != "Surendar" ]]; then
     echo "Access denied."
 else
-    echo "Welcome, Admin!"
+    echo "Welcome, Surendar!"
 fi
 
 #-z : String is empty (zero length)
