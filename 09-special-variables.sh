@@ -2,8 +2,8 @@
 
 #### script to demonstrate special variables ####
 
-PERSON1=SureSH
-PERSON2=ramesh
+PERSON1=$1
+PERSON2=$2
 
 echo "$PERSON1 : Hello! How can I assist you today?"
 echo "$PERSON2 : Hi $PERSON1, Iam looking for a good book to read."
