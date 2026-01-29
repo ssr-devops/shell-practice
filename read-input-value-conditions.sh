@@ -2,10 +2,8 @@
 
 read -p "Enter a nmber: " num
 
-if [[ $num -gt 33 ]]; then
+if [[ $num -gt 10 ]]; then
     echo "That's a big number!"
-    elif [[ $num -lt 60 ]]; then
-    echo "That's a small number!"
     else
-    echo "You entered zero!"
+    echo "That's a small number!"
 fi
