@@ -14,7 +14,7 @@ echo "The name of the shell is : $SHELL"
 echo "The home directory of the current user is : $HOME"
 echo "The current working directory is : $PWD"
 echo "The operating system type is : $OSTYPE"
-sleep 10
+sleep 5
 echo "The ID of the last background command is : $!"
 echo "The current user logged in is : $USER"
 echo "The path variable is : $PATH"
