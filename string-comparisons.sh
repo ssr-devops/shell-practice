@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME="Surendar"
+NAME=""
 
 #== : Equals
 if [[ $NAME == "Surendar" ]]; then
