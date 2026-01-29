@@ -1,14 +1,15 @@
 #!/bin/bash
 
 echo "Please enter the name of the first person:"
-read PERSON1
+read $1
 echo "Please enter the name of the second person:"
-read PERSON2
+read $2
 
-echo "$PERSON1 : Hello! How can I assist you today?"
-echo "$PERSON2 : Hi $PERSON1, Iam looking for a good book to read"
+echo "$1 : Hello! How can I assist you today?"
+echo "$2 : Hi $1, Iam looking for a good book to read"
 
-
+echo "$1 : Sure! What genre are you interested in?"
+echo "$2 : I enjoy science fiction and fantasy."
 sleep 5
 echo "The name of the script is : $0"
 echo "The first parameter is : $1"
