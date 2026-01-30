@@ -17,8 +17,5 @@ VALIDATE() {
 }
 
 
-INSTALL_NGINX() {
-    echo "Installing Nginx web server..."
-    dnf install -y nginx
-    VALIDATE "Nginx installation"
-}
+dnf install -y nginx
+VALIDATE $? "Nginx installation"
