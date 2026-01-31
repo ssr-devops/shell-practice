@@ -24,7 +24,7 @@ for pkg in $@ # sudo <file name> nginx mysql nodejs
 do
     dnf list installed "$pkg" &>>$LOGS_FILE
     if [ $? -ne 0 ]; then
-        echo "$pkg is already installed." | tee -a "$LOGS_FILE"
+        echo "$pkg is not installed, installing now." | tee -a "$LOGS_FILE"
         dnf install -y "$pkg" &>> "$LOGS_FILE"
         VALIDATE $? "$pkg installation"
     else
