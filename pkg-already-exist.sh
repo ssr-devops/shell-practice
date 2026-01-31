@@ -22,12 +22,12 @@ VALIDATE() {
 
 for pkg in $@ # sudo <file name> nginx mysql nodejs
 do
-    dnf list installed "pkg" &>>$LOGS_FILE
-    if [ $? -eq 0 ]; then
+    dnf list installed "$pkg" &>>$LOGS_FILE
+    if [ $? -ne 0 ]; then
         echo "$pkg is already installed." | tee -a "$LOGS_FILE"
         dnf install -y "$pkg" &>> "$LOGS_FILE"
         VALIDATE $? "$pkg installation"
     else
-        echo "$pkg is not installed. Skipping installation." | tee -a "$LOGS_FILE"
+        echo "$pkg is already installed. Skipping installation." | tee -a "$LOGS_FILE"
     fi
 done
