@@ -6,7 +6,7 @@ LOGS_FILE="/var/log/shell-practice/$0.log"
 
 
 if [ "$USERID" -ne 0 ]; then
-    echo "Please run as root"
+    echo "Please run as root" | tee -a "$LOGS_FILE"
     exit 1
 fi
 
