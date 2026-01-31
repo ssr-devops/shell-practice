@@ -22,6 +22,6 @@ VALIDATE() {
 
 for pkg in $@ # sudo <file name> nginx mysql-server nodejs
 do
-    dnf uninstall -y "$pkg" &>> "$LOGS_FILE"
-    VALIDATE $? "$pkg uninstallation"
+    dnf remove -y "$pkg" &>> "$LOGS_FILE"
+    VALIDATE $? "$pkg removal"
 done
